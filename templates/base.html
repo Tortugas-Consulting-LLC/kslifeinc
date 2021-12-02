@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <link href="{{get_url(path='site.css')}}" rel="stylesheet" type="text/css">
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- TODO(mmk) We need to change this per page -->
+        <title>Insurance broker in Wichita &amp; Hutchinson, KS | Kansas Life Auto &amp; Home LLC</title>
+        <meta name="description" content="Save money and protect yourself and your family with life insurance, auto and home insurance, Medicare supplement insurance, and retirement planning.">
+        <link rel="canonical" href="https://kslifeinc.com/">
+        <meta property="og:title" content="Kansas Life Auto &amp; Home LLC">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://kslifeinc.com/">
+        <meta property="og:site_name" content="Kansas Life Auto &amp; Home LLC">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Kansas Life Auto &amp; Home LLC">
+        <script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/_7Co1fh8iT2hcjvquYJ_3zSP/recaptcha__en.js" crossorigin="anonymous" integrity="sha384-yF7E1ktGfbA26NWZZupkIgKSvH2WmFG90KyY3BzFp06blZkjALcng9gGnuW5hlae"></script><script type="text/javascript">
+            window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+            ga('create', 'UA-136234156-1', 'auto');
+            // Plugins
+            ga('send', 'pageview');
+        </script>
+        <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+        <!-- <link rel="alternate" type="application/rss+xml" title="Kansas Life Auto &amp; Home LLC » Feed" href="https://kslifeinc.com/feed/"> -->
+        <!-- <link rel="alternate" type="application/rss+xml" title="Kansas Life Auto &amp; Home LLC » Comments Feed" href="https://kslifeinc.com/comments/feed/"> -->
+        <!-- <link rel="alternate" type="application/rss+xml" title="Kansas Life Auto &amp; Home LLC » Home Comments Feed" href="https://kslifeinc.com/home/feed/"> -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/39abfabc7e.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header class="py-3">
+            <div class='container mx-auto'>
+                <div class='flex justify-between items-start'>
+                    <img src="{{get_url(path='images/logo.png')}}" />
+                    <div class='flex justify-between items-start'>
+                        <div class="mr-8">
+                            <a href="https://facebook.com/kansaslife" title="Facebook">
+                                <i class="fab fa-facebook-square text-5xl"></i>
+                            </a>
+                        </div>
+                        <div class="contact-links mr-8">
+                            <a class="block" href="tel:+1-888-241-0489">Toll Free: 888-241-0489</a>
+                            <a class="block" href="tel:+1-620-665-1490">Life &amp; Health Insurance: 620-665-1490</a>
+                            <a class="block" href="tel:+1-620-205-2151">Auto &amp; Home: 620-205-2151</a>
+                        </div>
+                        <a href="/#contact" class="contact-us">
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
+                <!-- TODO(mmk) We need to figure out how to highlight the current page -->
+                <nav class="flex justify-end">
+                    <a class="px-2" href="/">Home</a>
+                    <a class="px-2" href="/">Medicare supplements</a>
+                    <a class="px-2" href="/">Life insurance</a>
+                    <a class="px-2" href="/">Retirement planning</a>
+                    <a class="px-2" href="/">Auto &amp; home</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="section">
+            <div class="container">
+                {% block content %} {% endblock %}
+            </div>
+
+            <footer class="py-14">
+                <div class='container mx-auto grid grid-cols-2 gap-x-14 gap-y-20'>
+                    <section>
+                        <h3 class="text-3xl uppercase mb-3">Call us today</h3>
+                        <div class="contact-links mb-3">
+                            <a class="block" href="tel:+1-888-241-0489">Toll Free: 888-241-0489</a>
+                            <a class="block" href="tel:+1-620-665-1490">Life &amp; Health Insurance: 620-665-1490</a>
+                            <a class="block" href="tel:+1-620-205-2151">Auto &amp; Home: 620-205-2151</a>
+                        </div>
+                        <h3 class="text-2xl capitalize mb-3">Or fill out the form below</h3>
+                    </section>
+
+                    <section>
+                        <h3 class="text-3xl uppercase mb-3">Career opportunities</h3>
+                        <p class="mb-3">
+                        Interested in a career in insurance? Are you a self-starter and passionate person motivated to help people? Would you be interested in a career that provides personal and professional growth, a flexible work schedule, and a six-figure income? &bull; First-year income of $40K plus &bull; Extensive training, no experience necessary &bull; Management opportunities Interested? Call us today at 620-665-1490.
+                        </p>
+                        <div class="flex justify-between">
+                            <address>
+                                Hutchinson Location<br/>
+                                917 E 30th Ave<br/>
+                                Hutchinson, KS 67502
+                            </address>
+                            <address>
+                                Wichita Location<br/>
+                                200 W. Douglas, Suite 634<br/>
+                                Wichita, KS 67202
+                            </address>
+                        </div>
+                    </section>
+                    <div class="col-span-full text-center uppercase">
+                        Copyright &copy; 2021 &bull; Kansas Life Auto &amp; Home LLC &bull; 917 E 30th Ave<br/>
+                        Hutchinson, KS 67502
+                    </div>
+                </div>
+            </footer>
+        </main>
+
+    </body>
+
+</html>

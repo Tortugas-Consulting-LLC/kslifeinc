@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$primary: #24588f;
+
+html {
+    font-family: 'Roboto Condensed';
+}
+
+header {
+    background-color: #eee;
+    color: $primary;
+
+    .contact-links a {
+        font-size: 1.1em;
+    }
+
+    .contact-us {
+        border: 2px solid $primary;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 14px 20px;
+    }
+
+    nav a {
+        @apply ml-2 px-3 py-1 uppercase font-thin;
+        border: 2px solid $primary;
+    }
+}
+
+footer {
+    background-color: $primary;
+    color: white;
+}

@@ -1,0 +1,15 @@
+{
+  "name": "kslifeinc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.4",
+    "tailwindcss": "^2.2.19"
+  },
+  "scripts": {
+      "watch": "tailwindcss -i static/global.css -o sass/site.scss --watch",
+      "build": "NODE_ENV=production tailwindcss -i static/global.css -o sass/site.scss"
+  }
+}
