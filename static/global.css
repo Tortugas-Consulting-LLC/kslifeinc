@@ -24,8 +24,63 @@ header {
     }
 
     nav a {
-        @apply ml-2 px-3 py-1 uppercase font-thin;
+        @apply ml-2 px-3 py-1 uppercase;
         border: 2px solid $primary;
+
+        &:hover {
+            background-color: $primary;
+            @apply text-white;
+        }
+    }
+}
+
+main {
+    #index-page {
+        .main-slider .slick-slide {
+            @apply text-white text-center;
+
+            > div {
+                background-color: $primary;
+                opacity: 0.7;
+                @apply inline-block py-16 px-16;
+
+                a {
+                    @apply border-2 border-solid border-white uppercase py-2 px-4 font-bold hover:bg-white hover:text-black;
+                }
+            }
+        }
+
+        .logos .slick-track {
+            @apply flex items-center;
+            max-height: 130px;
+
+            .slick-slide {
+                max-height: 130px;
+
+                img {
+                    @apply px-2;
+                }
+            }
+        }
+    }
+    .offerings {
+        .icon {
+            @apply w-32 h-32 bg-gray-100 rounded-full bg-center bg-contain p-4 mx-auto;
+
+            img {
+                @apply max-w-full max-h-full;
+            }
+        }
+
+        h4 {
+            @apply uppercase mt-4 mb-4 pb-2 border-double border-gray-200 border-b-4 text-lg;
+            color: $primary;
+        }
+    }
+
+    .button {
+        background-color: $primary;
+        @apply text-white uppercase block py-2 text-center;
     }
 }
 

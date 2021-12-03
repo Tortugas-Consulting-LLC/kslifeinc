@@ -1,7 +1,245 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1 class="title">
-  This is my blog made with Zola.
-</h1>
+    <section id="index-page">
+        <section class="bg-cover bg-center bg-no-repeat mb-8" style="background-image: url('{{get_url(path='images/family-on-beach.jpg')}}'">
+            <div class="container mx-auto py-8">
+                <div class="main-slider text-center">
+                    <div>
+                        <div class="max-w-md">
+                            <div class="text-4xl uppercase font-extrabold mb-4">I am turning 65.</div>
+                            <div class="mb-4">Medicare is a Federal Health insurance program for seniors.</div>
+                            <a href="medicare-supplements/">Learn More</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="max-w-md">
+                            <div class="text-4xl uppercase font-extrabold mb-4">I am: Over 65 and losing group insurance.</div>
+                            <div class="mb-4">Medicare offers a special enrollment period if you qualify.</div>
+                            <a href="medicare-supplements/#medicare">Learn More</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="max-w-md">
+                            <div class="text-4xl uppercase font-extrabold mb-4">How can I plan a secure retirement?</div>
+                            <div class="mb-4">Annuities offer a fixed-income payout option to ensure security.</div>
+                            <a href="retirement-planning">Learn More</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="max-w-md">
+                            <div class="text-4xl uppercase font-extrabold mb-4">I want quotes from several home and auto insurance providers.</div>
+                            <div class="mb-4">Let us help you get the best price and coverage for you!</div>
+                            <a href="auto-home-insurance-coverage">Learn More</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="max-w-md">
+                            <div class="text-5xl uppercase font-extrabold mb-4">How do I prepare for final expenses?</div>
+                            <div class="mb-4">We can review all your existing policies and find the best fit for you.</div>
+                            <a href="life-insurance">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="offerings container mx-auto mb-8">
+            <div class="grid grid-cols-4 gap-8">
+                <div class="flex flex-col justify-between">
+                    <div>
+                        <div class="icon">
+                            <img src="{{get_url(path='images/medicare-icon.png')}}" />
+                        </div>
+                        <h4>Medicare supplement</h4>
+                        <p>
+                        If you’re 65 years or older, you may qualify for Medicare supplement insurance. If you’re at all confused by this process or need help learning more about what’s available for you, contact us today.
+                        </p>
+                    </div>
+                    <a class="button mt-4" href="/medicare-supplements">Click here</a>
+                </div>
+
+                <div class="flex flex-col justify-between">
+                    <div>
+                        <div class="icon">
+                            <img src="{{get_url(path='images/life-insurance-icon.png')}}" />
+                        </div>
+                        <h4>Life insurance</h4>
+                        <p>
+                        No matter if you need a term, universal, or whole life insurance policy, our expert team is here to get you the coverage you need at a price you can afford.
+                        </p>
+                    </div>
+                    <a class="button mt-4" href="/life-insurance">Click here</a>
+                </div>
+
+                <div class="flex flex-col justify-between">
+                    <div>
+                        <div class="icon">
+                            <img src="{{get_url(path='images/retirement-icon.png')}}" />
+                        </div>
+                        <h4>Retirement planning</h4>
+                        <p>
+                        Do you need long-term care or are you looking for a deferred annuity in the future? No matter how you’re planning for retirement, let our team help you set yourself up for the rest of your life.
+                        </p>
+                    </div>
+                    <a class="button mt-4" href="/retirement-planning">Click here</a>
+                </div>
+
+                <div class="flex flex-col justify-between">
+                    <div>
+                        <div class="icon">
+                            <img src="{{get_url(path='images/auto-insurance-icon.png')}}" />
+                        </div>
+                        <h4>Auto &amp; home insurance</h4>
+                        <p>
+                        Protecting your property is something that you should be able to afford no matter your budget. We offer home and auto insurance bundles as well as separate policies to ensure that you’re always protected.
+                        </p>
+                    </div>
+                    <a class="button mt-4" href="/auto-home-insurance-coverage">Click here</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mx-auto mb-8">
+            <div class="grid grid-cols-2 gap-x-16 gap-y-4">
+                <div class="mx-auto">
+                    <strong class="text-center capitalize">Health &amp; life insurance providers</strong>
+                    <p class="text-center capitalize">More providers available</p>
+                </div>
+                <div class="mx-auto">
+                    <strong class="text-center capitalize">Auto &amp; home insurance providers</strong>
+                    <p class="text-center capitalize">More providers available</p>
+                </div>
+                <div class="logos">
+                    <div>
+                        <a href="https://www.oxfordlife.com/" target="_self">
+                            <img src="{{get_url(path='images/company-logos/oxford-life.png')}}" alt="Oxford Logo">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.royalneighbors.org/" target="_self">
+                            <img src="{{get_url(path='images/company-logos/royal-neighbors.png')}}" alt="Royal Neighbors Logo">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://slaico.americannational.com/wps/portal/slaico/home/!ut/p/z1/hY7LDoIwFES_hQVbemsDFHeNGBNCRDEqdmPAYMEAJVDh962PjYmP2d07ZyaDOEoQb9KhFKkqZZNW-j5w57ik9gR7gEPAKxeYF8zdKIjJYuag_T-Aaxu-iIHO8wdC156D6b3B30yA4TjytsQn0Q5ewI-OAHFRyew5lzUZoQLxLj_nXd5Z106_C6XafmqCCeM4WkJKUeXWSdYmfIoUslcoeSdRWydwsashZIZxAyImWBk!/dz/d5/L2dBISEvZ0FBIS9nQSEh/" target="_self">
+                            <img src="{{get_url(path='images/company-logos/slaico.png')}}" alt="Slaico Logo">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="http://www.trinitylifeinsurance.com/" target="_self">
+                            <img src="{{get_url(path='images/company-logos/trinity.png')}}" alt="Trinity Logo">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.cigna.com/" target="_self">
+                            <img src="{{get_url(path='images/company-logos/cigna.jpg')}}" alt="Cigna Logo">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.aetna.com/" target="_self">
+                            <img src="{{get_url(path='images/company-logos/aetna.png')}}" alt="Aetna Logo">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://advantages.aarp.org/en/financial-services-insurance/life-insurance.html" target="_self">
+                            <img src="{{get_url(path='images/company-logos/aarp.png')}}" alt="AARP Logo">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.americo.com/" target="_self">
+                            <img src="{{get_url(path='images/company-logos/americo.png')}}" alt="Americo Logo">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.baltlife.com/" target="_self">
+                            <img src="{{get_url(path='images/company-logos/baltlife.png')}}" alt="Baltlife Logo">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.foresters.com/en" target="_self">
+                            <img src="{{get_url(path='images/company-logos/foresters.png')}}" alt="Foresters Logo">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.genworth.com/" target="_self">
+                            <img src="{{get_url(path='images/company-logos/genworth.png')}}" alt="Genworth Logo">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.johnhancock.com/" target="_self">
+                            <img src="{{get_url(path='images/company-logos/john-hancock.png')}}" alt="John Hancock Logo">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.mutualofomaha.com/" target="_self">
+                            <img src="{{get_url(path='images/company-logos/mutual-of-omaha.png')}}" alt="Mutual of Omaha Logo">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.northamericancompany.com/" target="_self">
+                            <img src="{{get_url(path='images/company-logos/north-american-company.png')}}" alt="North American Company Logo">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="logos">
+                    <div>
+                        <a href="https://www.amig.com/" target="_self">
+                            <img src="{{get_url(path='images/company-logos/american-modern.jpeg')}}" alt="American Modern Logo">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.foremost.com/" target="_self">
+                            <img src="{{get_url(path='images/company-logos/foremost.png')}}" alt="Foremost Logo">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.travelers.com/" target="_self">
+                            <img src="{{get_url(path='images/company-logos/travelers.png')}}" alt="Travelers Logo">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://tradersauto.com/" target="_self">
+                            <img src="{{get_url(path='images/company-logos/traders.png')}}" alt="Traders Logo">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.allstate.com/" target="_self">
+                            <img src="{{get_url(path='images/company-logos/allstate.png')}}" alt="Allstate Logo">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.progressive.com/" target="_self">
+                            <img src="{{get_url(path='images/company-logos/progressive.jpg')}}" alt="Progressive Logo">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.metlife.com/" target="_self">
+                            <img src="{{get_url(path='images/company-logos/metlife.png')}}" alt="MetLife Logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-cover bg-top bg-no-repeat bg-blend-overlay" style="background-color: rgba(30, 47, 66, 0.87); background-image: url('{{get_url(path='images/couple-on-bikes.jpg')}}'">
+            <div class="container mx-auto py-8">
+                <h4 class="uppercase text-4xl text-white mb-4">Helping people one life at a time</h4>
+                <p class="w-7/12 text-white">
+                Kansas Life Auto and Home LLC was founded on the idea that we can help people one life at a time. To do that, we focus on helping the senior market secure a comfortable retirement and by offering quality home and auto insurance from the nation’s top providers. With a combined 54 years experience in the insurance industry, our veteran agents have the expertise needed to handle the challenges of this ever-evolving market and give you the best possible experience. We provide our clients with the most competitive insurance products available. This means that you can expect excellent coverage at a low cost. From long-term care insurance to Medicare supplements, retirement planning, home, and auto insurance put the burden of shopping the market on us. We represent hundreds of companies so that you can tailor the right insurance solution to your unique needs. At Kansas Life, we offer the full-spectrum or Medicare-aged insurance planning including life insurance, long-term care, annuities, and more. We are also experts at auto and home insurance, with dedicated staff ready and willing to offer you their experience and help. You can choose your insurance from multiple reputable carriers. This means that you don’t have to shop around. Instead, we do the shopping for you. We can compare your insurance rates from all major companies and give you a fast and easy quote.
+                </p>
+            </div>
+        </section>
+    </section>
 {% endblock content %}
+
+
+{% block javascript %}
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="{{get_url(path='index.js')}}"></script>
+{% endblock javascript %}
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+{% endblock css %}

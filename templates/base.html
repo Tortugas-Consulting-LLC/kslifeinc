@@ -33,6 +33,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
 
         <script src="https://kit.fontawesome.com/39abfabc7e.js" crossorigin="anonymous"></script>
+
+        {% block css %} {% endblock %}
     </head>
 
     <body>
@@ -68,48 +70,49 @@
         </header>
 
         <main class="section">
-            <div class="container">
-                {% block content %} {% endblock %}
-            </div>
-
-            <footer class="py-14">
-                <div class='container mx-auto grid grid-cols-2 gap-x-14 gap-y-20'>
-                    <section>
-                        <h3 class="text-3xl uppercase mb-3">Call us today</h3>
-                        <div class="contact-links mb-3">
-                            <a class="block" href="tel:+1-888-241-0489">Toll Free: 888-241-0489</a>
-                            <a class="block" href="tel:+1-620-665-1490">Life &amp; Health Insurance: 620-665-1490</a>
-                            <a class="block" href="tel:+1-620-205-2151">Auto &amp; Home: 620-205-2151</a>
-                        </div>
-                        <h3 class="text-2xl capitalize mb-3">Or fill out the form below</h3>
-                    </section>
-
-                    <section>
-                        <h3 class="text-3xl uppercase mb-3">Career opportunities</h3>
-                        <p class="mb-3">
-                        Interested in a career in insurance? Are you a self-starter and passionate person motivated to help people? Would you be interested in a career that provides personal and professional growth, a flexible work schedule, and a six-figure income? &bull; First-year income of $40K plus &bull; Extensive training, no experience necessary &bull; Management opportunities Interested? Call us today at 620-665-1490.
-                        </p>
-                        <div class="flex justify-between">
-                            <address>
-                                Hutchinson Location<br/>
-                                917 E 30th Ave<br/>
-                                Hutchinson, KS 67502
-                            </address>
-                            <address>
-                                Wichita Location<br/>
-                                200 W. Douglas, Suite 634<br/>
-                                Wichita, KS 67202
-                            </address>
-                        </div>
-                    </section>
-                    <div class="col-span-full text-center uppercase">
-                        Copyright &copy; 2021 &bull; Kansas Life Auto &amp; Home LLC &bull; 917 E 30th Ave<br/>
-                        Hutchinson, KS 67502
-                    </div>
-                </div>
-            </footer>
+            {% block content %} {% endblock %}
         </main>
 
+        <footer class="py-14">
+            <div class='container mx-auto grid grid-cols-2 gap-x-14 gap-y-20'>
+                <section>
+                    <h3 class="text-3xl uppercase mb-3">Call us today</h3>
+                    <div class="contact-links mb-3">
+                        <a class="block" href="tel:+1-888-241-0489">Toll Free: 888-241-0489</a>
+                        <a class="block" href="tel:+1-620-665-1490">Life &amp; Health Insurance: 620-665-1490</a>
+                        <a class="block" href="tel:+1-620-205-2151">Auto &amp; Home: 620-205-2151</a>
+                    </div>
+                    <h3 class="text-2xl capitalize mb-3">Or fill out the form below</h3>
+                </section>
+
+                <section>
+                    <h3 class="text-3xl uppercase mb-3">Career opportunities</h3>
+                    <p class="mb-3">
+                    Interested in a career in insurance? Are you a self-starter and passionate person motivated to help people? Would you be interested in a career that provides personal and professional growth, a flexible work schedule, and a six-figure income? &bull; First-year income of $40K plus &bull; Extensive training, no experience necessary &bull; Management opportunities Interested? Call us today at 620-665-1490.
+                    </p>
+                    <div class="flex justify-between">
+                        <address>
+                            Hutchinson Location<br/>
+                            917 E 30th Ave<br/>
+                            Hutchinson, KS 67502
+                        </address>
+                        <address>
+                            Wichita Location<br/>
+                            200 W. Douglas, Suite 634<br/>
+                            Wichita, KS 67202
+                        </address>
+                    </div>
+                </section>
+                <div class="col-span-full text-center uppercase">
+                    Copyright &copy; 2021 &bull; Kansas Life Auto &amp; Home LLC &bull; 917 E 30th Ave<br/>
+                    Hutchinson, KS 67502
+                </div>
+            </div>
+        </footer>
+
     </body>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    {% block javascript %} {% endblock %}
 
 </html>
