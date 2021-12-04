@@ -4,6 +4,7 @@
     <head>
         <meta charset="utf-8">
         <link href="{{get_url(path='site.css')}}" rel="stylesheet" type="text/css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -61,10 +62,10 @@
                 <!-- TODO(mmk) We need to figure out how to highlight the current page -->
                 <nav class="flex justify-end">
                     <a class="px-2" href="/">Home</a>
-                    <a class="px-2" href="/">Medicare supplements</a>
-                    <a class="px-2" href="/">Life insurance</a>
-                    <a class="px-2" href="/">Retirement planning</a>
-                    <a class="px-2" href="/">Auto &amp; home</a>
+                    <a class="px-2" href="/medicare-supplements">Medicare supplements</a>
+                    <a class="px-2" href="/life-insurance-coverage">Life insurance</a>
+                    <a class="px-2" href="/retirement-planning">Retirement planning</a>
+                    <a class="px-2" href="/auto-home-insurance-coverage">Auto &amp; home</a>
                 </nav>
             </div>
         </header>
@@ -112,7 +113,9 @@
 
     </body>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link href="{{get_url(path='site.css')}}" rel="stylesheet" type="text/css">
+    <script src="{{get_url(path='global.js')}}"></script>
+
     {% block javascript %} {% endblock %}
 
 </html>

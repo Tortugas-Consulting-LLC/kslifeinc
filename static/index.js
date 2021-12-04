@@ -6,8 +6,8 @@ $(function () {
     fade: true,
     autoplay: true,
     pauseOnHover: true,
-    nextArrow: '#does-not-exit',
-    prevArrow: '#does-not-exit',
+    nextArrow: '#does-not-exist',
+    prevArrow: '#does-not-exist',
     cssEase: 'linear'
   });
 
@@ -17,7 +17,7 @@ $(function () {
     autoplay: true,
     autoplaySpeed: 2000,
     pauseOnHover: true,
-    nextArrow: '#does-not-exit',
-    prevArrow: '#does-not-exit',
+    nextArrow: '#does-not-exist',
+    prevArrow: '#does-not-exist',
   });
 });

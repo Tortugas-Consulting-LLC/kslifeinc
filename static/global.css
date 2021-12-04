@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Condensed:400,700');
+
 $primary: #24588f;
 
 html {
@@ -35,6 +37,23 @@ header {
 }
 
 main {
+    .highlight {
+        color: $primary;
+    }
+
+    .well .callout {
+        @apply uppercase text-shadow-xxl p-48 text-center text-white text-5xl;
+    }
+
+    .tabs {
+        a {
+            @apply border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm;
+
+            &.active {
+                @apply border-indigo-500 text-indigo-600;
+            }
+        }
+    }
     #index-page {
         .main-slider .slick-slide {
             @apply text-white text-center;
@@ -58,6 +77,20 @@ main {
                 max-height: 130px;
 
                 img {
+                    @apply px-2;
+                }
+            }
+        }
+    }
+
+    #medicare-supplements {
+        .logos .slick-track {
+            @apply flex items-center;
+            max-height: 100px;
+
+            .slick-slide {
+                img {
+                    max-height: 100px;
                     @apply px-2;
                 }
             }
