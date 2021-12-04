@@ -12,6 +12,16 @@ module.exports = {
       none: 'none',
     },
     extend: {
+      colors: {
+        primary: {
+          default: '#24588f',
+        },
+        callout: {
+          light: '#4a74a0',
+          medium: '#2a5788',
+          dark: '#002f5f',
+        }
+      }
     }
   },
   variants: {},

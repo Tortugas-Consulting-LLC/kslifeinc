@@ -83,7 +83,7 @@ main {
         }
     }
 
-    #medicare-supplements {
+    #medicare-supplements, #life-insurance-coverage {
         .logos .slick-track {
             @apply flex items-center;
             max-height: 100px;
@@ -96,6 +96,7 @@ main {
             }
         }
     }
+
     .offerings {
         .icon {
             @apply w-32 h-32 bg-gray-100 rounded-full bg-center bg-contain p-4 mx-auto;
