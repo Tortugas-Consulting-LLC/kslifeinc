@@ -10,6 +10,10 @@ html {
     font-family: 'Roboto Condensed';
 }
 
+a {
+    @apply text-primary-default;
+}
+
 header {
     background-color: #eee;
     color: $primary;
@@ -83,7 +87,9 @@ main {
         }
     }
 
-    #medicare-supplements, #life-insurance-coverage {
+    #medicare-supplements,
+    #life-insurance-coverage,
+    #auto-home-insurance-coverage {
         .logos .slick-track {
             @apply flex items-center;
             max-height: 100px;
