@@ -29,13 +29,18 @@ header {
         padding: 14px 20px;
     }
 
-    nav a {
-        @apply ml-2 px-3 py-1 uppercase;
-        border: 2px solid $primary;
+    nav {
+        & a {
+            @apply sm:ml-2 px-3 py-2 sm:py-1 uppercase sm:border-2 sm:border-primary-default;
 
-        &:hover {
-            background-color: $primary;
-            @apply text-white;
+            &.active {
+                @apply bg-primary-default text-white;
+            }
+
+            &:hover {
+                background-color: $primary;
+                @apply text-white;
+            }
         }
     }
 }
@@ -46,7 +51,7 @@ main {
     }
 
     .well .callout {
-        @apply uppercase text-shadow-xxl p-48 text-center text-white text-5xl;
+        @apply uppercase text-shadow-xxl py-48 sm:px-48 text-center text-white text-5xl;
     }
 
     .tabs {

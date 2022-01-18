@@ -12,6 +12,9 @@ module.exports = {
       none: 'none',
     },
     extend: {
+      screens: {
+        xs: '450px',
+      },
       colors: {
         primary: {
           default: '#24588f',

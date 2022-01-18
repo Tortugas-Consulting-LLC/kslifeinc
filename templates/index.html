@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 
+{% block title %}
+    Insurance broker
+{% endblock %}
+
 {% block content %}
     <section id="index-page">
         <section class="bg-cover bg-center bg-no-repeat mb-8" style="background-image: url('{{get_url(path='images/family-on-beach.jpg')}}'">
@@ -16,36 +20,36 @@
                         <div class="max-w-md">
                             <div class="text-4xl uppercase font-extrabold mb-4">I am: Over 65 and losing group insurance.</div>
                             <div class="mb-4">Medicare offers a special enrollment period if you qualify.</div>
-                            <a href="/medicare-supplements/#medicare">Learn More</a>
+                            <a class="text-white" href="/medicare-supplements/#medicare">Learn More</a>
                         </div>
                     </div>
                     <div>
                         <div class="max-w-md">
                             <div class="text-4xl uppercase font-extrabold mb-4">How can I plan a secure retirement?</div>
                             <div class="mb-4">Annuities offer a fixed-income payout option to ensure security.</div>
-                            <a href="/retirement-planning">Learn More</a>
+                            <a class="text-white" href="/retirement-planning">Learn More</a>
                         </div>
                     </div>
                     <div>
                         <div class="max-w-md">
                             <div class="text-4xl uppercase font-extrabold mb-4">I want quotes from several home and auto insurance providers.</div>
                             <div class="mb-4">Let us help you get the best price and coverage for you!</div>
-                            <a href="/auto-home-insurance-coverage">Learn More</a>
+                            <a class="text-white" href="/auto-home-insurance-coverage">Learn More</a>
                         </div>
                     </div>
                     <div>
                         <div class="max-w-md">
                             <div class="text-5xl uppercase font-extrabold mb-4">How do I prepare for final expenses?</div>
                             <div class="mb-4">We can review all your existing policies and find the best fit for you.</div>
-                            <a href="/life-insurance">Learn More</a>
+                            <a class="text-white" href="/life-insurance-coverage">Learn More</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="offerings container mx-auto mb-8">
-            <div class="grid grid-cols-4 gap-8">
+        <section class="offerings container mx-auto mb-8 px-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div class="flex flex-col justify-between">
                     <div>
                         <div class="icon">
@@ -53,7 +57,7 @@
                         </div>
                         <h4>Medicare supplement</h4>
                         <p>
-                        If you’re 65 years or older, you may qualify for Medicare supplement insurance. If you’re at all confused by this process or need help learning more about what’s available for you, contact us today.
+                        If you're 65 years or older, you may qualify for Medicare supplement insurance. If you're at all confused by this process or need help learning more about what's available for you, contact us today.
                         </p>
                     </div>
                     <a class="button mt-4" href="/medicare-supplements">Click here</a>
@@ -69,7 +73,7 @@
                         No matter if you need a term, universal, or whole life insurance policy, our expert team is here to get you the coverage you need at a price you can afford.
                         </p>
                     </div>
-                    <a class="button mt-4" href="/life-insurance">Click here</a>
+                    <a class="button mt-4" href="/life-insurance-coverage">Click here</a>
                 </div>
 
                 <div class="flex flex-col justify-between">
@@ -79,7 +83,7 @@
                         </div>
                         <h4>Retirement planning</h4>
                         <p>
-                        Do you need long-term care or are you looking for a deferred annuity in the future? No matter how you’re planning for retirement, let our team help you set yourself up for the rest of your life.
+                        Do you need long-term care or are you looking for a deferred annuity in the future? No matter how you're planning for retirement, let our team help you set yourself up for the rest of your life.
                         </p>
                     </div>
                     <a class="button mt-4" href="/retirement-planning">Click here</a>
@@ -92,7 +96,7 @@
                         </div>
                         <h4>Auto &amp; home insurance</h4>
                         <p>
-                        Protecting your property is something that you should be able to afford no matter your budget. We offer home and auto insurance bundles as well as separate policies to ensure that you’re always protected.
+                        Protecting your property is something that you should be able to afford no matter your budget. We offer home and auto insurance bundles as well as separate policies to ensure that you're always protected.
                         </p>
                     </div>
                     <a class="button mt-4" href="/auto-home-insurance-coverage">Click here</a>
@@ -100,17 +104,17 @@
             </div>
         </section>
 
-        <section class="container mx-auto mb-8">
-            <div class="grid grid-cols-2 gap-x-16 gap-y-4">
-                <div class="mx-auto">
+        <section class="container mx-auto mb-8 px-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-16 gap-y-4">
+                <div class="order-1 mx-auto">
                     <strong class="text-center capitalize">Health &amp; life insurance providers</strong>
                     <p class="text-center capitalize">More providers available</p>
                 </div>
-                <div class="mx-auto">
+                <div class="order-3 sm:order-2 mx-auto">
                     <strong class="text-center capitalize">Auto &amp; home insurance providers</strong>
                     <p class="text-center capitalize">More providers available</p>
                 </div>
-                <div class="logos">
+                <div class="order-2 sms:order-3 logos">
                     <div>
                         <a href="https://www.oxfordlife.com/" target="_self">
                             <img src="{{get_url(path='images/company-logos/oxford-life.png')}}" alt="Oxford Logo">
@@ -183,7 +187,7 @@
                     </div>
                 </div>
 
-                <div class="logos">
+                <div class="order-4 logos">
                     <div>
                         <a href="https://www.amig.com/" target="_self">
                             <img src="{{get_url(path='images/company-logos/american-modern.jpeg')}}" alt="American Modern Logo">
@@ -224,10 +228,10 @@
         </section>
 
         <section class="bg-cover bg-top bg-no-repeat bg-blend-overlay" style="background-color: rgba(30, 47, 66, 0.87); background-image: url('{{get_url(path='images/couple-on-bikes.jpg')}}'">
-            <div class="container mx-auto py-8">
+            <div class="container mx-auto py-8 px-4">
                 <h4 class="uppercase text-4xl text-white mb-4">Helping people one life at a time</h4>
-                <p class="w-7/12 text-white">
-                Kansas Life Auto and Home LLC was founded on the idea that we can help people one life at a time. To do that, we focus on helping the senior market secure a comfortable retirement and by offering quality home and auto insurance from the nation’s top providers. With a combined 54 years experience in the insurance industry, our veteran agents have the expertise needed to handle the challenges of this ever-evolving market and give you the best possible experience. We provide our clients with the most competitive insurance products available. This means that you can expect excellent coverage at a low cost. From long-term care insurance to Medicare supplements, retirement planning, home, and auto insurance put the burden of shopping the market on us. We represent hundreds of companies so that you can tailor the right insurance solution to your unique needs. At Kansas Life, we offer the full-spectrum or Medicare-aged insurance planning including life insurance, long-term care, annuities, and more. We are also experts at auto and home insurance, with dedicated staff ready and willing to offer you their experience and help. You can choose your insurance from multiple reputable carriers. This means that you don’t have to shop around. Instead, we do the shopping for you. We can compare your insurance rates from all major companies and give you a fast and easy quote.
+                <p class="w-full lg:w-7/12 text-white">
+                Kansas Life Insurance Agency LLC was founded on the idea that we can help people one life at a time. To do that, we focus on helping the senior market secure a comfortable retirement and by offering quality home and auto insurance from the nation's top providers. With a combined 54 years experience in the insurance industry, our veteran agents have the expertise needed to handle the challenges of this ever-evolving market and give you the best possible experience. We provide our clients with the most competitive insurance products available. This means that you can expect excellent coverage at a low cost. From long-term care insurance to Medicare supplements, retirement planning, home, and auto insurance put the burden of shopping the market on us. We represent hundreds of companies so that you can tailor the right insurance solution to your unique needs. At Kansas Life, we offer the full-spectrum or Medicare-aged insurance planning including life insurance, long-term care, annuities, and more. We are also experts at auto and home insurance, with dedicated staff ready and willing to offer you their experience and help. You can choose your insurance from multiple reputable carriers. This means that you don't have to shop around. Instead, we do the shopping for you. We can compare your insurance rates from all major companies and give you a fast and easy quote.
                 </p>
             </div>
         </section>

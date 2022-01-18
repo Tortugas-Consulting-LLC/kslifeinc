@@ -7,7 +7,7 @@ page_template = "page.html"
     <section class="bg-cover bg-center mb-8 well" style="background-image: url('/images/medicare-header.jpg');">
         <h2 class="callout">Medicare supplements</h2>
     </section>
-    <section class="container mx-auto mb-8">
+    <section class="container mx-auto mb-8 px-4">
         <p class="mb-4">Medicare is a Federal health insurance program for seniors (age 65 and up), for under 65 with certain disabilities, and at any age with End-Stage Renal Disease ESRD (permanent kidney failure requiring dialysis or kidney transplant).</p>
         <p class="mb-4">Medicare has two parts: <strong>Part A (Hospital Benefit) and Part B (Medical Benefit)</strong>. You will hear about Part C and Part D. These are different areas that you may or may not want and isn’t usually appropriate for everyone. We will discuss Part C and Part D further below and why or why not you should sign up.</p>
         <div class="logos overflow-hidden">
@@ -73,17 +73,17 @@ page_template = "page.html"
             </div>
         </div>
     </section>
-    <section class="container mx-auto mb-16">
-        <h2 class="uppercase text-3xl">Medicare 2021 Premiums</h2>
+    <section class="container mx-auto mb-16 px-4">
+        <h2 class="uppercase text-3xl">Medicare 2022 Premiums</h2>
         <div class="tabs">
-            <div class="sm:hidden">
+            <div class="lg:hidden">
                 <label for="premiums" class="sr-only">Select a tab</label>
                 <select id="premiums" name="premiums" class="block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md">
                 <option value="part-a" selected>Part A: (Hospital Insurance) Premium</option>
                 <option value="part-b">Part B: (Medical Insurance) Premium</option>
                 </select>
             </div>
-            <div class="hidden sm:block">
+            <div class="hidden lg:block">
                 <div class="border-b border-gray-200">
                 <nav class="-mb-px flex space-x-8" aria-label="Premiums">
                     <a href="#part-a" class="active" aria-current="page">
@@ -98,30 +98,30 @@ page_template = "page.html"
             <div class="mt-4">
                 <div class="part-a tab-content">
                     <ul class="list-disc list-inside">
-                        <li>The Part A premium is $259.00 per month for people having 30-39 calendar quarters of Medicare-covered employment.</li>
-                        <li>The Part A premium is $471.00 per month for people who are not otherwise eligible for premium-free hospital insurance and have less than 30 quarters of Medicare-covered employment.</li>
+                        <li>The Part A premium is $0 for most people because they paid Medicare taxes long enough while working - generally at least 10 years). This is sometimes called "premium-free Part A."</li>
+                        <li>If you don’t qualify for a premium-free Part A, you might be able to buy it. In 2022, the premium is either $259 or $471 each month ($274 or $499 each month in 2022), depending on how long you or your spouse worked and paid Medicare taxes.</li>
                     </ul>
                 </div>
                 <div class="part-b tab-content hidden">
                     <ul class="list-disc list-inside">
-                        <li>Most people pay the Part B premium of $148.50 each month if you sign up for Part B when you’re first eligible.</li>
-                        <li>You pay $203 per year for your Part B deductible.</li>
+                        <li>Most people pay the Part B premium of $170.10 each month if you sign up for Part B when you’re first eligible.</li>
+                        <li>You pay $233 per year for your Part B deductible.</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
-    <section class="container mx-auto mb-16">
-        <h2 class="uppercase text-3xl">MEDICARE DEDUCTIBLE AND COINSURANCE AMOUNTS FOR 2021</h2>
+    <section class="container mx-auto mb-16 px-4">
+        <h2 class="uppercase text-3xl">MEDICARE DEDUCTIBLE AND COINSURANCE AMOUNTS FOR 2022</h2>
         <div class="tabs">
-            <div class="sm:hidden">
+            <div class="lg:hidden">
                 <label for="deductible" class="sr-only">Select a tab</label>
                 <select id="deductible" name="deductible" class="block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md">
                 <option value="part-a" selected>Part A</option>
                 <option value="part-b">Part B</option>
                 </select>
             </div>
-            <div class="hidden sm:block">
+            <div class="hidden lg:block">
                 <div class="border-b border-gray-200">
                 <nav class="-mb-px flex space-x-8" aria-label="Deductibles">
                     <a href="#part-a" class="active" aria-current="page">
@@ -135,42 +135,42 @@ page_template = "page.html"
             </div>
             <div class="mt-4">
                 <div class="part-a tab-content">
-                    <p class="mb-4">For each benefit period Medicare pays all covered costs except the Medicare Part A deductible ($1,484) during the first 60 days and coinsurance amounts for hospital stays that last beyond 60 days and no more than 150 days.</p>
-                    <p class="mb-4">For each benefit period&ast; in 2021 you pay:</p>
+                    <p class="mb-4">For each benefit period Medicare pays all covered costs except the Medicare Part A deductible ($1,556) during the first 60 days and coinsurance amounts for hospital stays that last beyond 60 days and no more than 150 days.</p>
+                    <p class="mb-4">For each benefit period&ast; in 2022 you pay:</p>
                     <ul class="list-disc list-inside mb-4">
-                        <li>A total of $1,484 for a hospital stay of 1-60 days.</li>
-                        <li>$371 per day for days 61-90 of a hospital stay.</li>
-                        <li>$742 per day for days 91-150 of a hospital stay (Lifetime Reserve Days).</li>
+                        <li>A total of $1,566 for a hospital stay of 1-60 days.</li>
+                        <li>$389 per day for days 61-90 of a hospital stay.</li>
+                        <li>$778 per day for days 91-150 of a hospital stay (Lifetime Reserve Days).</li>
                         <li>All costs for each day beyond 150 days</li>
                     </ul>
                     <p class="mb-4">&ast;A new benefit period begins when you have been out of the hospital for 60 or more consecutive days.</p>
                     <p class="mb-4"><strong>Skilled Nursing Facility Coinsurance</strong></p>
                     <ul class="list-disc list-inside mb-4">
-                        <li>$185.50 per day for days 21 through 100 each benefit period.</li>
+                        <li>$194.50 per day for days 21 through 100 each benefit period.</li>
                     </ul>
                 </div>
                 <div class="part-b tab-content hidden">
                     <p class="mb-4"><strong>(Covers Medicare eligible physician services, outpatient hospital services, certain home health services, durable medical equipment)</strong></p>
                     <ul class="list-disc list-inside mb-4">
-                        <li>$203.00 per year in 2021. (Note: You pay 20% of the Medicare-approved amount for services after you meet the $185.00 deductible.)</li>
+                        <li>$233.00 per year in 2022. (Note: You pay 20% of the Medicare-approved amount for services after you meet the $233.00 deductible.)</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
-    <section class="container mx-auto mb-16">
-        <div class="grid grid-cols-2 gap-x-8">
+    <section class="container mx-auto mb-16 px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-y-8 md:gap-x-8 md:gap-y-0">
             <img src="/images/canoe.jpg" />
             <img src="/images/sign-papers.jpg" />
         </div>
     </section>
-    <section class="container mx-auto mb-16">
+    <section class="container mx-auto mb-16 px-4">
         <h2 class="uppercase text-3xl">MEDICARE SUPPLEMENT COVERAGE: COMPARISON OF PLANS A-N</h2>
         <img class="mb-4" src="/images/medicare-table.png" />
-        <p class="mb-4">&ast;Plans F and G also offer a high-deductible plan. This means you must pay for Medicare-covered costs up to the deductible amount $2,370 in 2021 before your policy pays anything.</p>
-        <p class="mb-4">Plan K has a $6,220 out-of-pocket limit, and Plan L has a $3,110 out-of-pocket limit. Once you meet the annual limit, the plan pays 100% of the Medicare copayments, coinsurance, and deductibles for the rest of the calendar year. These amounts can change each year.</p>
+        <p class="mb-4">&ast;Plans F and G also offer a high-deductible plan. This means you must pay for Medicare-covered costs up to the deductible amount $2,490 in 2022 before your policy pays anything.</p>
+        <p class="mb-4">Plan K has a $6,620 out-of-pocket limit, and Plan L has a $3,310 out-of-pocket limit. Once you meet the annual limit, the plan pays 100% of the Medicare copayments, coinsurance, and deductibles for the rest of the calendar year. These amounts can change each year.</p>
     </section>
-    <section class="container mx-auto mb-16">
+    <section class="container mx-auto mb-16 px-4">
         <h2 class="uppercase text-3xl">HOW CAN I COVER THE GAPS IN MEDICARE?</h2>
         <p class="mb-4">You have three options</p>
         <ol class="list-decimal list-inside mb-4">
@@ -179,9 +179,9 @@ page_template = "page.html"
             <li>You can enroll in a Medicare Advantage Plan, Part C.</li>
         </ol>
     </section>
-    <section class="container mx-auto mb-16">
+    <section class="container mx-auto mb-16 px-4">
         <div class="tabs">
-            <div class="sm:hidden">
+            <div class="lg:hidden">
                 <label for="policies" class="sr-only">Select a tab</label>
                 <select id="policies" name="policies" class="block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md">
                 <option value="part-a" selected>Medicare Supplement Insurance/Medigap Policy</option>
@@ -190,7 +190,7 @@ page_template = "page.html"
                 <option value="part-d">Prescription Drug Plan, Part D</option>
                 </select>
             </div>
-            <div class="hidden sm:block">
+            <div class="hidden lg:block">
                 <div class="border-b border-gray-200">
                 <nav class="-mb-px flex space-x-8" aria-label="Policies">
                     <a href="#part-a" class="active" aria-current="page">
@@ -217,7 +217,7 @@ page_template = "page.html"
                     <h5>Core Benefits:</h5>
                     <ul class="list-disc list-inside mb-4">
                         <li>Included in all plans.</li>
-                        <li>Pays Part A Hospital copayment ($341 per day for 61-90 days and $682 per day for 91-150 days)</li>
+                        <li>Pays Part A Hospital copayment ($389 per day for 61-90 days and $778 per day for 91-150 days)</li>
                         <li>Pays for an additional 365 days of hospitalization after Medicare benefits end.</li>
                         <li>Pays Part B copayment (usually 20% of the Medicare-approved amount)</li>
                         <li>Pays for the first three pints of blood per year.</li>
@@ -241,7 +241,7 @@ page_template = "page.html"
             </div>
         </div>
     </section>
-    <section class="container mx-auto mb-16">
+    <section class="container mx-auto mb-16 px-4">
         <h2 class="uppercase text-3xl">KANSAS DENTAL VISION INSURANCE COVERAGE</h2>
         <p class="mb-4">Dental Vision coverage is not provided by Medicare or a Medicare Supplement unless it directly correlates to your health coverage. If you wish to have dental vision coverage or are just shopping for some rates, please call us today at <strong class="highlight">620-665-1490</strong> to learn more about our dental vision coverage.</p>
     </section>

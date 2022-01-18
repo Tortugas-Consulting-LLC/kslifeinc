@@ -7,12 +7,12 @@ page_template = "page.html"
     <section class="bg-cover bg-center mb-8 well" style="background-image: url('/images/life-insurance-coverage-header.jpg');">
         <h2 class="callout">Life insurance coverage</h2>
     </section>
-    <section class="container mx-auto mb-8">
+    <section class="container mx-auto mb-8 px-4">
         <p class="mb-4">Everyone gets older. The key is to prepare to protect your lifestyle and your family no matter what stage of life you are in. Protect your family with long-lasting financial security even after you’re gone. We can help you prepare for life after you’re no longer here to help your family pay for funeral expenses, housing costs, medical bills, debts, and more.</p>
-        <p class="mb-4">Kansas Life has access to many different companies to fulfill your life insurance needs. We can cover just about anything you or your family may need. Whether you need a term, universal, or whole life insurance, our network of agents can help you review any existing policies and determine what will best fit your needs at the most competitive premiums.</p>
+        <p class="mb-4">Kansas Life Insurance Agency LLC has access to many different companies to fulfill your life insurance needs. We can cover just about anything you or your family may need. Whether you need a term, universal, or whole life insurance, our network of agents can help you review any existing policies and determine what will best fit your needs at the most competitive premiums.</p>
     </section>
-    <section class="container mx-auto mb-8">
-        <div class="grid grid-cols-3 gap-x-8">
+    <section class="container mx-auto mb-8 px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-y-8 md:gap-x-8">
             <div class="bg-callout-light text-white p-4">
                 <h4 class="text-2xl mb-4">Final expense insurance</h4>
                 <p>If you’re looking for affordable premium payments as you get older, final expense insurance is for you. This insurance is designed to help you cover all final expenses including medical bills, credit card debt, funeral costs, and more.</p>
@@ -27,7 +27,7 @@ page_template = "page.html"
             </div>
         </div>
     </section>
-    <section class="container mx-auto mb-8">
+    <section class="container mx-auto mb-8 px-4">
         <p class="mb-4 text-2xl">Our insurance providers include the following and more:</p>
         <div class="logos overflow-hidden">
             <div>
@@ -102,7 +102,7 @@ page_template = "page.html"
             </div>
         </div>
     </section>
-    <section class="container mx-auto mb-16">
+    <section class="container mx-auto mb-16 px-4">
         <p>Contact us today at <strong class="highlight">620-665-1490</strong> to ask about our life insurance options and to shop around for the best policy for you and your family.</p>
     </section>
 </div>

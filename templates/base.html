@@ -8,16 +8,15 @@
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- TODO(mmk) We need to change this per page -->
-        <title>Insurance broker in Wichita &amp; Hutchinson, KS | Kansas Life Auto &amp; Home LLC</title>
+        <title>{% block title %} {% endblock %} in Wichita &amp; Hutchinson, KS | Kansas Life Insurance Agency LLC</title>
         <meta name="description" content="Save money and protect yourself and your family with life insurance, auto and home insurance, Medicare supplement insurance, and retirement planning.">
         <link rel="canonical" href="https://kslifeinc.com/">
-        <meta property="og:title" content="Kansas Life Auto &amp; Home LLC">
+        <meta property="og:title" content="Kansas Life Insurance Agency LLC">
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://kslifeinc.com/">
-        <meta property="og:site_name" content="Kansas Life Auto &amp; Home LLC">
+        <meta property="og:site_name" content="Kansas Life Insurance Agency LLC">
         <meta name="twitter:card" content="summary">
-        <meta name="twitter:title" content="Kansas Life Auto &amp; Home LLC">
+        <meta name="twitter:title" content="Kansas Life Insurance Agency LLC">
         <script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/_7Co1fh8iT2hcjvquYJ_3zSP/recaptcha__en.js" crossorigin="anonymous" integrity="sha384-yF7E1ktGfbA26NWZZupkIgKSvH2WmFG90KyY3BzFp06blZkjALcng9gGnuW5hlae"></script><script type="text/javascript">
             window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
             ga('create', 'UA-136234156-1', 'auto');
@@ -25,10 +24,6 @@
             ga('send', 'pageview');
         </script>
         <script async="" src="https://www.google-analytics.com/analytics.js"></script>
-        <!-- <link rel="alternate" type="application/rss+xml" title="Kansas Life Auto &amp; Home LLC » Feed" href="https://kslifeinc.com/feed/"> -->
-        <!-- <link rel="alternate" type="application/rss+xml" title="Kansas Life Auto &amp; Home LLC » Comments Feed" href="https://kslifeinc.com/comments/feed/"> -->
-        <!-- <link rel="alternate" type="application/rss+xml" title="Kansas Life Auto &amp; Home LLC » Home Comments Feed" href="https://kslifeinc.com/home/feed/"> -->
-
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
@@ -41,31 +36,36 @@
     <body>
         <header class="py-3">
             <div class='container mx-auto'>
-                <div class='flex justify-between items-start'>
-                    <img src="{{get_url(path='images/logo.png')}}" />
-                    <div class='flex justify-between items-start'>
-                        <div class="mr-8">
+                <div class='flex flex-col sm:flex-row justify-between items-start'>
+                    <img src="{{get_url(path='images/logo.png')}}" class="mx-auto sm:mx-0 mb-4 sm:mb-0" />
+                    <div class='flex flex-col items-center sm:items-end mx-auto sm:mx-0 sm:flex-row justify-between items-start'>
+                        <div class="sm:mr-8 mb-4 sm:mb-0">
                             <a href="https://facebook.com/kansaslife" title="Facebook">
                                 <i class="fab fa-facebook-square text-5xl"></i>
                             </a>
                         </div>
-                        <div class="contact-links mr-8">
+                        <div class="contact-links sm:mr-8 text-center sm:text-left mb-4 sm:mb-0">
                             <a class="block" href="tel:+1-888-241-0489">Toll Free: 888-241-0489</a>
                             <a class="block" href="tel:+1-620-665-1490">Life &amp; Health Insurance: 620-665-1490</a>
                             <a class="block" href="tel:+1-620-205-2151">Auto &amp; Home: 620-205-2151</a>
                         </div>
-                        <a href="/#contact" class="contact-us">
+                        <a href="#contact" class="contact-us mb-4 sm:mb-0">
                             Contact Us
                         </a>
                     </div>
                 </div>
-                <!-- TODO(mmk) We need to figure out how to highlight the current page -->
-                <nav class="flex justify-end">
-                    <a class="px-2" href="/">Home</a>
-                    <a class="px-2" href="/medicare-supplements">Medicare supplements</a>
-                    <a class="px-2" href="/life-insurance-coverage">Life insurance</a>
-                    <a class="px-2" href="/retirement-planning">Retirement planning</a>
-                    <a class="px-2" href="/auto-home-insurance-coverage">Auto &amp; home</a>
+                <svg id="open-mobile-nav" x-description="Icon when menu is closed. Heroicon name: outline/menu" x-state:on="Menu open" x-state:off="Menu closed" class="h-6 w-6 block mx-auto mb-3 sm:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+                <svg id="close-mobile-nav" x-description="Icon when menu is open. Heroicon name: outline/x" x-state:on="Menu open" x-state:off="Menu closed" class="h-6 w-6 block mx-auto mb-3 hidden sm:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+                <nav class="justify-end hidden sm:flex flex-col sm:flex-row">
+                    <a class="sm:px-2 {% if current_path == "/" %}active{% endif %}" href="/">Home</a>
+                    <a class="sm:px-2 {% if current_path == "/medicare-supplements/" %}active{% endif %}" href="/medicare-supplements">Medicare supplements</a>
+                    <a class="sm:px-2 {% if current_path == "/life-insurance-coverage/" %}active{% endif %}" href="/life-insurance-coverage">Life insurance</a>
+                    <a class="sm:px-2 {% if current_path == "/retirement-planning/" %}active{% endif %}" href="/retirement-planning">Retirement planning</a>
+                    <a class="sm:px-2 {% if current_path == "/auto-home-insurance-coverage/" %}active{% endif %}" href="/auto-home-insurance-coverage">Auto &amp; home</a>
                 </nav>
             </div>
         </header>
@@ -75,7 +75,7 @@
         </main>
 
         <footer class="py-14">
-            <div class='container mx-auto grid grid-cols-2 gap-x-14 gap-y-20'>
+            <div class='container mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-14 gap-y-20 px-4'>
                 <section>
                     <h3 class="text-3xl uppercase mb-3">Call us today</h3>
                     <div class="contact-links mb-3">
@@ -84,8 +84,85 @@
                         <a class="block text-white" href="tel:+1-620-205-2151">Auto &amp; Home: 620-205-2151</a>
                     </div>
                     <h3 class="text-2xl capitalize mb-3">Or fill out the form below</h3>
-                </section>
+                    <a id="contact"></a>
+                    <form class="space-y-8" action="https://formspree.io/f/mzbobrwa" method="POST">
+                        <div class="space-y-8">
+                            <div class="mt-6 grid grid-cols-1 gap-y-6 gap-x-4">
+                                <div>
+                                    <label for="first-name" class="block text-sm font-medium">
+                                        First name <span class="text-red-400">&ast;</span>
+                                    </label>
+                                    <div class="mt-1">
+                                        <input type="text" required name="first-name" id="first-name" autocomplete="given-name" class="shadow-sm text-black focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md">
+                                    </div>
+                                </div>
 
+                                <div>
+                                    <label for="last-name" class="block text-sm font-medium">
+                                        Last name <span class="text-red-400">&ast;</span>
+                                    </label>
+                                    <div class="mt-1">
+                                        <input type="text" required name="last-name" id="last-name" autocomplete="family-name" class="shadow-sm text-black focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label for="phone" class="block text-sm font-medium">
+                                        Phone number
+                                    </label>
+                                    <div class="mt-1">
+                                        <input id="phone" name="phone" type="tel" autocomplete="phone" class="shadow-sm text-black focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label for="email" class="block text-sm font-medium">
+                                        Email address <span class="text-red-400">&ast;</span>
+                                    </label>
+                                    <div class="mt-1">
+                                        <input id="email" required name="email" type="email" autocomplete="email" class="shadow-sm text-black focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md">
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label for="insurance-situation" class="block text-sm font-medium">
+                                        Insurance situation or product needed
+                                    </label>
+                                    <div class="mt-1">
+                                        <select id="insurance-situation" name="insurance-situation" autocomplete="insurance-situation" class="shadow-sm text-black focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md">
+                                            <option>Ask an agent a question</option>
+                                            <option>Dental Vision Insurance Coverage</option>
+                                            <option>Medicare Supplement</option>
+                                            <option>Medicare Part D (Prescription Plan)</option>
+                                            <option>Medicare Advantage Plan</option>
+                                            <option>Long-Term Care Insurance</option>
+                                            <option>Life Insurance</option>
+                                            <option>Annuities</option>
+                                            <option>Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <label for="comment" class="block text-sm font-medium">
+                                        Comments
+                                    </label>
+                                    <div class="mt-1">
+                                        <textarea name="comment" id="comment" class="shadow-sm text-black focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-2">
+                            <div class="flex justify-end">
+                                <button type="submit" class="uppercase font-bold w-full justify-center py-2 px-4 border-2 border-white shadow-sm text-sm rounded-md text-white hover:bg-white hover:text-primary-default focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white">
+                                    Send
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </section>
                 <section>
                     <h3 class="text-3xl uppercase mb-3">Career opportunities</h3>
                     <p class="mb-3">
@@ -105,7 +182,7 @@
                     </div>
                 </section>
                 <div class="col-span-full text-center uppercase">
-                    Copyright &copy; 2021 &bull; Kansas Life Auto &amp; Home LLC &bull; 917 E 30th Ave<br/>
+                    Copyright &copy; 2022 &bull; Kansas Life Insurance Agency LLC &bull; 917 E 30th Ave<br/>
                     Hutchinson, KS 67502
                 </div>
             </div>

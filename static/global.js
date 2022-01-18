@@ -1,4 +1,16 @@
 $(function () {
+  $("header #open-mobile-nav").on('click', function () {
+    $("header nav").addClass("flex").removeClass('hidden');
+    $("header #close-mobile-nav").addClass("block").removeClass('hidden');
+    $("header #open-mobile-nav").addClass("hidden").removeClass('block');
+  });
+
+  $("header #close-mobile-nav").on('click', function () {
+    $("header nav").removeClass("flex").addClass('hidden');
+    $("header #close-mobile-nav").addClass("hidden").removeClass('block');
+    $("header #open-mobile-nav").addClass("block").removeClass('hidden');
+  });
+
   $(".tabs").on('change', function (event) {
     let $container = $(event.delegateTarget);
     let selected = $(event.target).val();

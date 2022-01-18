@@ -7,12 +7,12 @@ page_template = "page.html"
     <section class="bg-cover bg-center mb-8 well" style="background-image: url('/images/retirement-planning-header.jpg');">
         <h2 class="callout">Retirement planning</h2>
     </section>
-    <section class="container mx-auto mb-8">
+    <section class="container mx-auto mb-8 px-4">
         <h2 class="uppercase text-3xl mb-4">PEACE OF MIND KNOWING YOU PLANNED WELL FOR RETIREMENT</h2>
-        <p class="mb-4">At Kansas Life, we believe that planning for your successful retirement is vital. By taking your retirement into your own hands, you can ensure that you’ve saved what you need for the future that you’ll be financially secure no matter the circumstances. Financial planning for your retirement is crucial and can help you maximize all of your opportunities.</p>
+        <p class="mb-4">At Kansas Life Insurance Agency LLC, we believe that planning for your successful retirement is vital. By taking your retirement into your own hands, you can ensure that you’ve saved what you need for the future that you’ll be financially secure no matter the circumstances. Financial planning for your retirement is crucial and can help you maximize all of your opportunities.</p>
         <p class="mb-4">Let our expert team of brokers walk you through the retirement planning process and help you figure out how you’ll save and live in retirement. There are a myriad of ways to meet your goals, and we can help you get there. Call <strong class="highlight">620-665-1490</strong> to learn more today.</p>
     </section>
-    <section class="container mx-auto mb-8">
+    <section class="container mx-auto mb-8 px-4">
         <h3 class="text-2xl capitalize mb-3">Annuities</h3>
         <ul role="list" class="accordion">
             <li>
@@ -55,12 +55,12 @@ page_template = "page.html"
                     <p class="mb-4">This means the owner of the indexed annuity now has assumed more risk than a fixed annuity but less than being in the equity markets themselves. The result is that the expected yield (risk-adjusted) for an indexed annuity is higher than a fixed annuity, CD, etc. However, the expected yield of being in the market is higher for several reasons.</p>
                     <p class="mb-4">The premium (in our example the $100,000) is at risk of loss when owning the index outright. It should be noted that Equity Index Annuity does not participate in dividends as owning the index outright would, and similarly there are no ongoing transaction expenses or fees. Interest is compounded as frequently as when interest is credited and this is almost always annually, but contracts are available that credit interest over a 5-year term. </p>
                     <p class="mb-4">The taxation of the gains in an indexed annuity is identical to that of fixed annuities. Taxes are deferred until monies are received and then interest is withdrawn first and taxed as ordinary income. </p>
-                    <p class="mb-4 italic">UNBIASED: Like many brokers and associations, Kansas Life does not represent just one carrier or push a pre-chosen policy. We represent several A-rated carriers – the very best in the business. And we offer all types of policies currently available.</p>
+                    <p class="mb-4 italic">UNBIASED: Like many brokers and associations, Kansas Life Insurance Agency LLC does not represent just one carrier or push a pre-chosen policy. We represent several A-rated carriers – the very best in the business. And we offer all types of policies currently available.</p>
                 </div>
             </li>
         </ul>
     </section>
-    <section class="container mx-auto mb-8">
+    <section class="container mx-auto mb-8 px-4">
         <h3 class="text-2xl capitalize mb-3">Long-Term case insurance</h3>
         <ul role="list" class="accordion">
             <li>
@@ -167,8 +167,8 @@ page_template = "page.html"
             </li>
         </ul>
     </section>
-    <section class="container mx-auto mb-16">
-        <h3 class="text-2xl capitalize mb-3">What can Kansas Life do for you?</h3>
+    <section class="container mx-auto mb-16 px-4">
+        <h3 class="text-2xl capitalize mb-3">What can Kansas Life Insurance Agency LLC do for you?</h3>
         <p class="text-xl mb-4">We can give you options:</p>
         <ul class="list-disc list-inside mb-4">
             <li>Coverage for: Nursing Homes</li>
