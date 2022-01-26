@@ -14,10 +14,6 @@ a {
     @apply text-primary-default;
 }
 
-.overflow-hidden {
-    overflow: hidden;
-}
-
 header {
     background-color: #eee;
     color: $primary;
