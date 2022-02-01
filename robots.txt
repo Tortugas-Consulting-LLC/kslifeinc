@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kslifeinc.com/sitemap.xml
