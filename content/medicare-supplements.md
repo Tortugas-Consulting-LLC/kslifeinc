@@ -74,7 +74,7 @@ page_template = "page.html"
         </div>
     </section>
     <section class="container mx-auto mb-16 px-4">
-        <h2 class="uppercase text-3xl">Medicare 2022 Premiums</h2>
+        <h2 class="uppercase text-3xl">Medicare 2023 Premiums</h2>
         <div class="tabs">
             <div class="lg:hidden">
                 <label for="premiums" class="sr-only">Select a tab</label>
@@ -99,20 +99,20 @@ page_template = "page.html"
                 <div class="part-a tab-content">
                     <ul class="list-disc list-inside">
                         <li>The Part A premium is $0 for most people because they paid Medicare taxes long enough while working - generally at least 10 years). This is sometimes called "premium-free Part A."</li>
-                        <li>If you don’t qualify for a premium-free Part A, you might be able to buy it. In 2022, the premium is either $259 or $471 each month ($274 or $499 each month in 2022), depending on how long you or your spouse worked and paid Medicare taxes.</li>
+                        <li>If you don’t qualify for a premium-free Part A, you might be able to buy it. In 2023, the premium is either $278 or $506 each month ($278 or $506 each month in 2023), depending on how long you or your spouse worked and paid Medicare taxes.</li>
                     </ul>
                 </div>
                 <div class="part-b tab-content hidden">
                     <ul class="list-disc list-inside">
-                        <li>Most people pay the Part B premium of $170.10 each month if you sign up for Part B when you’re first eligible.</li>
-                        <li>You pay $233 per year for your Part B deductible.</li>
+                        <li>Most people pay the Part B premium of $164.90 each month if you sign up for Part B when you’re first eligible.</li>
+                        <li>You pay $226 per year for your Part B deductible.</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
     <section class="container mx-auto mb-16 px-4">
-        <h2 class="uppercase text-3xl">MEDICARE DEDUCTIBLE AND COINSURANCE AMOUNTS FOR 2022</h2>
+        <h2 class="uppercase text-3xl">MEDICARE DEDUCTIBLE AND COINSURANCE AMOUNTS FOR 2023</h2>
         <div class="tabs">
             <div class="lg:hidden">
                 <label for="deductible" class="sr-only">Select a tab</label>
@@ -135,24 +135,24 @@ page_template = "page.html"
             </div>
             <div class="mt-4">
                 <div class="part-a tab-content">
-                    <p class="mb-4">For each benefit period Medicare pays all covered costs except the Medicare Part A deductible ($1,556) during the first 60 days and coinsurance amounts for hospital stays that last beyond 60 days and no more than 150 days.</p>
-                    <p class="mb-4">For each benefit period&ast; in 2022 you pay:</p>
+                    <p class="mb-4">For each benefit period Medicare pays all covered costs except the Medicare Part A deductible ($1,600) during the first 60 days and coinsurance amounts for hospital stays that last beyond 60 days and no more than 150 days.</p>
+                    <p class="mb-4">For each benefit period&ast; in 2023 you pay:</p>
                     <ul class="list-disc list-inside mb-4">
-                        <li>A total of $1,566 for a hospital stay of 1-60 days.</li>
-                        <li>$389 per day for days 61-90 of a hospital stay.</li>
-                        <li>$778 per day for days 91-150 of a hospital stay (Lifetime Reserve Days).</li>
+                        <li>A total of $1,600 for a hospital stay of 1-60 days.</li>
+                        <li>$400 per day for days 61-90 of a hospital stay.</li>
+                        <li>$800 per day for days 91-150 of a hospital stay (Lifetime Reserve Days).</li>
                         <li>All costs for each day beyond 150 days</li>
                     </ul>
                     <p class="mb-4">&ast;A new benefit period begins when you have been out of the hospital for 60 or more consecutive days.</p>
                     <p class="mb-4"><strong>Skilled Nursing Facility Coinsurance</strong></p>
                     <ul class="list-disc list-inside mb-4">
-                        <li>$194.50 per day for days 21 through 100 each benefit period.</li>
+                        <li>$200.00 per day for days 21 through 100 each benefit period.</li>
                     </ul>
                 </div>
                 <div class="part-b tab-content hidden">
                     <p class="mb-4"><strong>(Covers Medicare eligible physician services, outpatient hospital services, certain home health services, durable medical equipment)</strong></p>
                     <ul class="list-disc list-inside mb-4">
-                        <li>$233.00 per year in 2022. (Note: You pay 20% of the Medicare-approved amount for services after you meet the $233.00 deductible.)</li>
+                        <li>$226.00 per year in 2023. (Note: You pay 20% of the Medicare-approved amount for services after you meet the $226.00 deductible.)</li>
                     </ul>
                 </div>
             </div>
@@ -167,8 +167,8 @@ page_template = "page.html"
     <section class="container mx-auto mb-16 px-4">
         <h2 class="uppercase text-3xl">MEDICARE SUPPLEMENT COVERAGE: COMPARISON OF PLANS A-N</h2>
         <img class="mb-4" src="/images/medicare-table.png" />
-        <p class="mb-4">&ast;Plans F and G also offer a high-deductible plan. This means you must pay for Medicare-covered costs up to the deductible amount $2,490 in 2022 before your policy pays anything.</p>
-        <p class="mb-4">Plan K has a $6,620 out-of-pocket limit, and Plan L has a $3,310 out-of-pocket limit. Once you meet the annual limit, the plan pays 100% of the Medicare copayments, coinsurance, and deductibles for the rest of the calendar year. These amounts can change each year.</p>
+        <p class="mb-4">&ast;Plans F and G also offer a high-deductible plan. This means you must pay for Medicare-covered costs up to the deductible amount $2,700 in 2023 before your policy pays anything.</p>
+        <p class="mb-4">Plan K has a $6,940 out-of-pocket limit, and Plan L has a $3,470 out-of-pocket limit. Once you meet the annual limit, the plan pays 100% of the Medicare copayments, coinsurance, and deductibles for the rest of the calendar year. These amounts can change each year.</p>
     </section>
     <section class="container mx-auto mb-16 px-4">
         <h2 class="uppercase text-3xl">HOW CAN I COVER THE GAPS IN MEDICARE?</h2>
@@ -217,7 +217,7 @@ page_template = "page.html"
                     <h5>Core Benefits:</h5>
                     <ul class="list-disc list-inside mb-4">
                         <li>Included in all plans.</li>
-                        <li>Pays Part A Hospital copayment ($389 per day for 61-90 days and $778 per day for 91-150 days)</li>
+                        <li>Pays Part A Hospital copayment ($400 per day for 61-90 days and $800 per day for 91-150 days)</li>
                         <li>Pays for an additional 365 days of hospitalization after Medicare benefits end.</li>
                         <li>Pays Part B copayment (usually 20% of the Medicare-approved amount)</li>
                         <li>Pays for the first three pints of blood per year.</li>
