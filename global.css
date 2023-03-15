@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Condensed:400,700');
+
+$primary: #24588f;
+
+html {
+    font-family: 'Roboto Condensed';
+}
+
+a {
+    @apply text-primary-default;
+}
+
+header {
+    background-color: #eee;
+    color: $primary;
+
+    .contact-links a {
+        font-size: 1.1em;
+    }
+
+    .contact-us {
+        border: 2px solid $primary;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 14px 20px;
+    }
+
+    nav {
+        & a {
+            @apply sm:ml-2 px-3 py-2 sm:py-1 uppercase sm:border-2 sm:border-primary-default;
+
+            &.active {
+                @apply bg-primary-default text-white;
+            }
+
+            &:hover {
+                background-color: $primary;
+                @apply text-white;
+            }
+        }
+    }
+}
+
+main {
+    .highlight {
+        color: $primary;
+    }
+
+    .well .callout {
+        @apply uppercase text-shadow-xxl py-48 sm:px-48 text-center text-white text-5xl;
+    }
+
+    .tabs {
+        a {
+            @apply border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm;
+
+            &.active {
+                @apply border-indigo-500 text-indigo-600;
+            }
+        }
+    }
+    #index-page {
+        .main-slider .slick-slide {
+            @apply text-white text-center;
+
+            > div {
+                background-color: $primary;
+                opacity: 0.7;
+                @apply inline-block py-16 px-16;
+
+                a {
+                    @apply border-2 border-solid border-white uppercase py-2 px-4 font-bold hover:bg-white hover:text-black;
+                }
+            }
+        }
+
+        .logos .slick-track {
+            @apply flex items-center;
+            max-height: 130px;
+
+            .slick-slide {
+                max-height: 130px;
+
+                img {
+                    @apply px-2;
+                }
+            }
+        }
+    }
+
+    #medicare-supplements,
+    #life-insurance-coverage,
+    #auto-home-insurance-coverage {
+        .logos .slick-track {
+            @apply flex items-center;
+            max-height: 100px;
+
+            .slick-slide {
+                img {
+                    max-height: 100px;
+                    @apply px-2;
+                }
+            }
+        }
+    }
+
+    .accordion {
+        @apply space-y-3;
+
+        > li {
+            @apply bg-white shadow overflow-hidden px-4 py-4 sm:px-6 sm:rounded-md;
+
+            h5 {
+                @apply text-lg capitalize;
+            }
+
+            h5.open:before {
+                content: "\f107";
+            }
+
+            h5:before {
+                content: "\f105";
+                font-family: FontAwesome;
+                padding-right: 3px;
+            }
+        }
+    }
+
+    .offerings {
+        .icon {
+            @apply w-32 h-32 bg-gray-100 rounded-full bg-center bg-contain p-4 mx-auto;
+
+            img {
+                @apply max-w-full max-h-full;
+            }
+        }
+
+        h4 {
+            @apply uppercase mt-4 mb-4 pb-2 border-double border-gray-200 border-b-4 text-lg;
+            color: $primary;
+        }
+    }
+
+    .button {
+        background-color: $primary;
+        @apply text-white uppercase block py-2 text-center;
+    }
+}
+
+footer {
+    background-color: $primary;
+    color: white;
+}
