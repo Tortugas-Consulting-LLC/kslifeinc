@@ -9,8 +9,8 @@ page_template = "page.html"
     </section>
     <section class="container mx-auto mb-8 px-4">
         <h2 class="uppercase text-3xl mb-4">PEACE OF MIND KNOWING YOU PLANNED WELL FOR RETIREMENT</h2>
-        <p class="mb-4">At Kansas Life Insurance Agency LLC, we believe that planning for your successful retirement is vital. By taking your retirement into your own hands, you can ensure that you’ve saved what you need for the future that you’ll be financially secure no matter the circumstances. Financial planning for your retirement is crucial and can help you maximize all of your opportunities.</p>
-        <p class="mb-4">Let our expert team of brokers walk you through the retirement planning process and help you figure out how you’ll save and live in retirement. There are a myriad of ways to meet your goals, and we can help you get there. Call <strong class="highlight">620-665-1490</strong> to learn more today.</p>
+        <p class="mb-4">At Kansas Life Insurance Agency LLC, we believe that planning for your successful retirement is vital. By taking your retirement into your own hands, you can ensure that you've saved what you need for the future that you'll be financially secure no matter the circumstances. Financial planning for your retirement is crucial and can help you maximize all of your opportunities.</p>
+        <p class="mb-4">Let our expert team of brokers walk you through the retirement planning process and help you figure out how you'll save and live in retirement. There are a myriad of ways to meet your goals, and we can help you get there. Call <strong class="highlight">620-665-1490</strong> to learn more today.</p>
     </section>
     <section class="container mx-auto mb-8 px-4">
         <h3 class="text-2xl capitalize mb-3">Annuities</h3>
@@ -46,7 +46,7 @@ page_template = "page.html"
                     <p class="mb-4">There are several pay-out methods available when you begin receiving annuity payments. With some options, you or your beneficiaries can select how you want to be paid. The following are some of these: </p>
                     <p class="mb-4">You can get income for your entire lifetime even when the money in your annuity account has been used up. This is advantageous if you live to an advanced age because it will maximize the income that you will receive. However, there is a risk involved: when you die, all the money cannot be claimed, even by your assigned beneficiaries. If you die young, you simply lose this money.</p>
                     <p class="mb-4">Another is the joint and survivor annuity where it pays you during your lifetime, and after your death, your beneficiary (usually your spouse) will also be paid during his or her lifetime.</p>
-                    <p class="mb-4">You can also refund your annuity, meaning you’re gaining income for life. However, when you die, the portion of the income payments that you have not collected will be the only amount that your beneficiary receives.</p>
+                    <p class="mb-4">You can also refund your annuity, meaning you're gaining income for life. However, when you die, the portion of the income payments that you have not collected will be the only amount that your beneficiary receives.</p>
                     <p class="mb-4">An <strong>equity-indexed annuity</strong> is a type of tax-deferred annuity whose credited interest is linked to an equity index – typically the S&amp;P 500. It guarantees a minimum interest rate (typically between 1% and 3%) if held to the end of the surrender term and protects against a loss of principal and any previously gained interest. An equity-indexed annuity is a contract with an insurance or annuity company. The returns may be higher than fixed investments such as CDs, money market accounts, and bonds but not as high as market returns. </p>
                     <p class="mb-4">The contracts may be suitable for a portion of the asset portfolio for those who want to avoid risk and are in retirement or nearing retirement age. The objective of purchasing an equity index annuity is to realize greater gains than those provided by CDs, money markets or bonds, while still protecting principal. Indexed annuities represent about 30% of all fixed annuity sales in 2006 according to the Advantage Group (see <a href="http://www.indexannuity.org/">www.indexannuity.org</a>)</p>
                     <h6 class="mb-4">A Different Way to Credit Interest</h6>
@@ -80,7 +80,7 @@ page_template = "page.html"
                         <li>1 Million people deplete their LIFE SAVINGS and are impoverished EVERY YEAR due to long-term care.</li>
                         <li>Long-term care is expensive! The average cost is $80,800 per year nationwide.</li>
                     </ul>
-                    <p class="mb-4">How would a bill this size affect my current lifestyle? How about my spouse’s lifestyle? What about my spouse’s future years?</p>
+                    <p class="mb-4">How would a bill this size affect my current lifestyle? How about my spouse's lifestyle? What about my spouse's future years?</p>
                     <p class="mb-4">If you have assets you want to protect, if you want to maintain your independence, if you want to never be a burden on your family or if you want to protect your lifestyle, we will help you find the way.</p>
                     <h6 class="mb-4 text-2xl">More Facts About Long Term Care</h6>
                     <ul class="list-disc list-inside mb-4">
@@ -92,7 +92,7 @@ page_template = "page.html"
                                 <li>Nursing Home = 2.6 years</li>
                                 <li>Home Health Care = 4.5 years</li>
                                 <li>Assisted Living = 18 months</li>
-                                <li>The lifespan of Alzheimer’s patient = 4.9 years on average — 5.7 for women, 4.2 for men</li>
+                                <li>The lifespan of Alzheimer's patient = 4.9 years on average — 5.7 for women, 4.2 for men</li>
                             </ul>
                         </li>
                         <li>
@@ -105,7 +105,7 @@ page_template = "page.html"
                             </ul>
                         </li>
                         <li>
-                            Would you consider going without your homeowner’s or automobile insurance?
+                            Would you consider going without your homeowner's or automobile insurance?
                             <ul class="list-disc list-inside ml-8">
                                 <li>5 out of 1000 people have a house fire (average loss is $3,428).&ast;</li>
                                 <li>70 out of 1000 people will have an auto accident (average loss is $3,000).&ast;</li>
@@ -126,10 +126,10 @@ page_template = "page.html"
                     <p class="mb-4">Is Medicaid the right answer for you and your family?</p>
                     <ul class="list-disc list-inside mb-4">
                         <li>
-                            If your income exceeds $1,638 per month you won’t qualify until:
+                            If your income exceeds $1,638 per month you won't qualify until:
                             <ul class="list-disc list-inside ml-8">
                                 <li>You have spent your assets down to under $2,000.00</li>
-                                <li>These assets include: cash, stocks, bonds, retirement accounts, CD’s, treasury notes, savings bonds, investment property, farm ground, second vehicles and more.</li>
+                                <li>These assets include: cash, stocks, bonds, retirement accounts, CD's, treasury notes, savings bonds, investment property, farm ground, second vehicles and more.</li>
                                 <li>Once this spend-down occurs, then all sources of income are used to go toward long-term care expenses. This includes social security, retirement income, pensions, etc…</li>
                                 <li>This leaves the welfare recipient an average income nationwide of $30 per month!</li>
                             </ul>
@@ -138,7 +138,7 @@ page_template = "page.html"
                     </ul>
                     <h6 class="mb-4 text-2xl">Can You Use Your Resources?</h6>
                     <ul class="list-disc list-inside mb-4">
-                        <li>Savings/CD’s: You could wipe out the savings it took a lifetime to accumulate</li>
+                        <li>Savings/CD's: You could wipe out the savings it took a lifetime to accumulate</li>
                         <li>Sell Assets: Do you have enough assets to do the job? What kind of price will you get from a forced sale at a time that might not be appropriate?</li>
                         <li>Do you have family and/or friends to take care of you?</li>
                         <li>Will they be available 24/7 to take care of you?</li>
@@ -160,7 +160,7 @@ page_template = "page.html"
                     <ul class="list-disc list-inside mb-4">
                         <li>You will not be a burden on your children.</li>
                         <li>You will be able to maintain your independence and freedom of choice.</li>
-                        <li>You will protect your life’s work from the expenses of long-term care.</li>
+                        <li>You will protect your life's work from the expenses of long-term care.</li>
                         <li>You will protect the lifestyle of your spouse.</li>
                     </ul>
                 </div>
