@@ -60,12 +60,17 @@
                 <svg id="close-mobile-nav" x-description="Icon when menu is open. Heroicon name: outline/x" x-state:on="Menu open" x-state:off="Menu closed" class="h-6 w-6 block mx-auto mb-3 hidden sm:hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
-                <nav class="justify-end hidden sm:flex flex-col sm:flex-row">
-                    <a class="sm:px-2 {% if current_path == "/" %}active{% endif %}" href="/">Home</a>
-                    <a class="sm:px-2 {% if current_path == "/medicare-supplements/" %}active{% endif %}" href="/medicare-supplements">Medicare supplements</a>
-                    <a class="sm:px-2 {% if current_path == "/life-insurance-coverage/" %}active{% endif %}" href="/life-insurance-coverage">Life insurance</a>
-                    <a class="sm:px-2 {% if current_path == "/retirement-planning/" %}active{% endif %}" href="/retirement-planning">Retirement planning</a>
-                    <a class="sm:px-2 {% if current_path == "/auto-home-insurance-coverage/" %}active{% endif %}" href="/auto-home-insurance-coverage">Auto &amp; home</a>
+                <nav class="justify-between hidden sm:flex flex-col sm:flex-row mt-2">
+                    <div class="flex">
+                        <a class="sm:px-2" href="/auto-home-insurance-coverage">Waive Coverage Form</a>
+                    </div>
+                    <div class="flex">
+                        <a class="sm:px-2 {% if current_path == "/" %}active{% endif %}" href="/">Home</a>
+                        <a class="sm:px-2 {% if current_path == "/medicare-supplements/" %}active{% endif %}" href="/medicare-supplements">Medicare supplements</a>
+                        <a class="sm:px-2 {% if current_path == "/life-insurance-coverage/" %}active{% endif %}" href="/life-insurance-coverage">Life insurance</a>
+                        <a class="sm:px-2 {% if current_path == "/retirement-planning/" %}active{% endif %}" href="/retirement-planning">Retirement planning</a>
+                        <a class="sm:px-2 {% if current_path == "/auto-home-insurance-coverage/" %}active{% endif %}" href="/auto-home-insurance-coverage">Auto &amp; home</a>
+                    </div>
                 </nav>
             </div>
         </header>

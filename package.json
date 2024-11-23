@@ -13,5 +13,6 @@
   "scripts": {
     "watch": "tailwindcss -i static/global.css -o sass/site.scss --watch",
     "build": "NODE_ENV=production tailwindcss -i static/global.css -o sass/site.scss"
-  }
+  },
+  "dependencies": {}
 }
